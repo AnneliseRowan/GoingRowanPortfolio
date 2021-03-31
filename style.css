@@ -1,1 +1,80 @@
 
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+.banner {
+    height: 500px; 
+    position: relative;
+    width: 100%; 
+}
+
+.banner img {
+    width: 100%; 
+}
+
+h1 {
+    position: absolute; 
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    font-family: "Abril Fatface", cursive;
+    color: black; 
+    font-size: 70px; 
+}
+
+.content {
+    background-color: #fff;
+    color: black;
+    height: 450px; 
+    padding-top: 130px; 
+    position: relative;
+    text-align: left; 
+    width: 100%; 
+}
+
+.content img {
+    float: left; 
+    margin-left: 15px; 
+    width: 350px;
+    height: 350px; 
+    border-radius: 50%;
+}
+
+.content h2 {
+    
+    font-size: 30px;
+    margin: 0; 
+    margin-bottom: 30px; 
+    font-family: "Abril Fatface", cursive;
+}
+
+.content p {
+    padding: 0 180px; 
+    
+    font-family: "Abril Fatface", cursive;
+    line-height: 2;
+}
+
+.content:before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 125px; 
+    top: -40px; 
+    left: 0; 
+    background: #fff;
+    transform: skewY(7deg); 
+}
+
+.content:after{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 125px; 
+    top: -40px; 
+    right: 0; 
+    background: #fff;
+    transform: skewY(-7deg); 
+}
