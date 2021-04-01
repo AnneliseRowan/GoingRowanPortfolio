@@ -1,140 +1,114 @@
-
 * {
     margin: 0; 
-    padding: 0;
-    list-style: none;
+    padding: 0; 
+    text-decoration: none;
 }
-.banner {
+
+.header {
     display: flex; 
-    height: 500px; 
-    position: relative;
-    width: 100%; 
+    
 }
 
-.banner img {
-    width: 100%; 
+
+.fox {
+    object-position: left top; 
+    height: 200px;
+    width: 200px; 
+
 }
 
-h1 {
-    position: absolute; 
-    top: 20%; 
-    left: 50%; 
-    transform: translate(-50%,-50%);
-    font-family: "Abril Fatface", cursive;
-    color: black; 
-    font-size: 70px; 
+.name {
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+    margin-top: 75px;
+    margin-left: -65px; 
+    font-size: 40px;
 }
 
-.content {
+.intro {
     display: flex; 
-    align-items: center;
-    background-color: #fff;
-    color: black;
-    height: 475px; 
-    position: relative;
-    text-align: left; 
-    width: 100%; 
+    background-color: black;
+    color: white; 
+    font-family: 'Lora', serif;
+    border: 20px solid white; 
 }
 
-.content img {
-    margin-left: 20px; 
-    width: 350px;
-    height: 350px; 
-    border-radius: 50%;
+.intro img {
+    height: 750px; 
+    width: 800px;  
+
 }
 
-.content h2 {
-    font-size: 60px;
-    margin: 20px;  
-    font-family: "Abril Fatface", cursive;
+.about {
+    text-align: center;
+    margin: 20px; 
+    margin-top: 300px;
+    font-weight: lighter;
 }
 
-.content p {
-    padding: 5px; 
-    font-family: "Abril Fatface", cursive;
+.about h2 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.about p {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 16px;
     line-height: 2;
-    font-size: 20px; 
-    margin-top: 20px;
 }
 
-.content:before{
-    position: absolute;
-    content: "";
-    width: 60%;
-    height: 125px; 
-    top: -40px; 
-    left: 0; 
-    background: #fff;
-    transform: skewY(7deg); 
-}
-
-.content:after{
-    position: absolute;
-    content: "";
-    width: 60%;
-    height: 125px; 
-    top: -40px; 
-    right: 0; 
-    background: #fff;
-    transform: skewY(-7deg); 
+.project-title {
+    background-color: white;
+    color: black;
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+    border: 20px solid white; 
+    padding: 10px; 
+    margin-left: 10px; 
 }
 
 .projects {
+    padding: 10px;
     display: flex; 
     flex-flow: row wrap;
+    align-items: center;
     justify-content: space-evenly;
-    align-items: flex-start; 
-    align-content: space-around;
-    padding: 10px; 
-    margin-bottom: 20px;
-    background-color: black;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 50px solid white;
 }
 
-.p-name {
-    color: white; 
+.ind {
+    color: black; 
+    font-family: 'Lora', serif;
+    flex: 40%; 
+    padding: 20px; 
 }
 
-.p-ind {
-    border: 5px solid black; 
-    margin: 10px; 
-}
-
-.p-imgs {
-    width: 300px;
-    height: 300px; 
+.projects img {
+    height: 300px;
+    width: 900px;  
+    flex: 50%; 
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-content: space-evenly;
-    flex-direction: row;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-.contact {
-    font-family: "Abril Fatface", cursive;
-    font-size: 20px;
-}
-
-.icon {
-    height: 45px;
-    width: 45px;
-    margin: 10px;
+    display: flex; 
     
+}
+
+
+.footer div {
+    margin-top: 70px;
+    margin: 0 auto;
+}
+
+.footer .icon{
+    height: 50px; 
+    width: 50px; 
+    margin: 5px; 
 }
 
 @media screen and (max-width: 320px) {
     flex-direction: column;
-}
-
-@media screen and (min-width: 1550px) {
-    .content:before{
-        transform: skewY(6deg); 
-    }
-
-    .content:after{
-        transform: skewY(354deg); 
-    }
 }
