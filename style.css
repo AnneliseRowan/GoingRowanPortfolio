@@ -80,18 +80,23 @@ h1 {
 }
 
 .projects {
-    border-top: 30px solid black;
-    border-bottom: 30px solid black;
     display: flex; 
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: flex-start; 
     align-content: space-around;
     padding: 10px; 
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.p-name {
+    color: white; 
 }
 
 .p-ind {
     border: 5px solid black; 
+    margin: 10px; 
 }
 
 .p-imgs {
@@ -102,39 +107,34 @@ h1 {
 .footer {
     display: flex;
     justify-content: center;
-    align-content: space-around;
+    align-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.contact {
+    font-family: "Abril Fatface", cursive;
+    font-size: 20px;
 }
 
 .icon {
     height: 45px;
     width: 45px;
+    margin: 10px;
     
 }
 
 @media screen and (max-width: 320px) {
-    flex-direction: column
+    flex-direction: column;
 }
 
 @media screen and (min-width: 1550px) {
     .content:before{
-        position: absolute;
-        content: "";
-        width: 60%;
-        height: 125px; 
-        top: -40px; 
-        left: 0; 
-        background: #fff;
         transform: skewY(6deg); 
     }
 
     .content:after{
-        position: absolute;
-        content: "";
-        width: 60%;
-        height: 125px; 
-        top: -40px; 
-        right: 0; 
-        background: #fff;
         transform: skewY(354deg); 
     }
 }
