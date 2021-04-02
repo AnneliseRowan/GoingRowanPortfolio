@@ -98,17 +98,23 @@
     justify-content: center;
     background-color: black;
     border: 20px solid white;
-    color: white; 
     font-family: 'Lora', serif;
-
+    color: white; 
+    padding-bottom: 43px;
 }
 
+
 #projects h1 {
-    font-size: 30px;
+    font-size: 40px;
+    margin: 0px 106px 0px 46px; 
+    border: 33px solid white; 
+    padding: 24px; 
+
 }
 
 .new-project {
-    margin: 0 50%; 
+    margin: 42px -82px 18px 307px; 
+
 }
 
 .new-project img{
@@ -118,6 +124,7 @@
 
 .ind { 
     padding: 20px; 
+    color: white; 
 }
 
 .ind img {
@@ -146,8 +153,12 @@
 }
 
 #footer .email{
-    padding: 5px;
-    font-weight: bold;
+    padding: 20px;
+}
+
+#footer .bolder {
+    font-weight: bolder;
+    padding: 10px;
 }
 
 @media screen and (max-width: 320px) {
