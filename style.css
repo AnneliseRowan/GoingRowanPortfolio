@@ -6,7 +6,6 @@
 
 .header {
     display: flex; 
-    
 }
 
 
@@ -16,6 +15,38 @@
     width: 200px; 
 
 }
+
+.menu {
+    border: 20px solid white; 
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 10px; 
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+}
+
+.menu li {
+    float: right; 
+}
+
+.menu li a {
+    display: block;
+    color: white; 
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: darkslategrey;
+}
+
+
 
 .name {
     font-family: 'Lora', serif;
@@ -58,55 +89,65 @@
     line-height: 2;
 }
 
-.project-title {
-    background-color: white;
-    color: black;
-    font-family: 'Lora', serif;
-    font-weight: bolder;
-    border: 20px solid white; 
-    padding: 10px; 
-    margin-left: 10px; 
-}
-
-.projects {
+#projects {
     padding: 10px;
     display: flex; 
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
     justify-content: center;
-    background-color: white;
-    border-bottom: 50px solid white;
+    background-color: black;
+    border: 20px solid white;
+    color: white; 
+    font-family: 'Lora', serif;
+
 }
 
-.ind {
-    color: black; 
-    font-family: 'Lora', serif;
-    flex: 40%; 
+#projects h1 {
+    font-size: 30px;
+}
+
+.new-project {
+    margin: 0 50%; 
+}
+
+.new-project img{
+    height: 800px;
+    width: 600px;
+}
+
+.ind { 
     padding: 20px; 
 }
 
-.projects img {
+.ind img {
     height: 300px;
-    width: 900px;  
+    width: 800px;  
     flex: 50%; 
 }
 
-.footer {
+#footer {
     display: flex; 
+    margin-bottom: 40px;
+}
+
+
+#footer div {
+    font-size: 30px;
+    margin:  0 auto;
+    text-align: center;
     
 }
 
-
-.footer div {
-    margin-top: 70px;
-    margin: 0 auto;
-}
-
-.footer .icon{
+#footer .icon{
     height: 50px; 
     width: 50px; 
-    margin: 5px; 
+    margin: 10px; 
+}
+
+#footer .email{
+    padding: 5px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 320px) {
