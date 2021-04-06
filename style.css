@@ -192,6 +192,7 @@
     
     #intro {
         display: flex; 
+        flex-direction: column;
         background-color: black;
         color: white; 
         font-family: 'Lora', serif;
@@ -200,7 +201,10 @@
     }
     
     #intro img {
-        display: none;
+        background: url("./images/b&w\(2\)small.jpg");
+        width: 200px; 
+        height: 200px; 
+        margin: -16px 0px 15px 86px; 
     }
     
     #about {
@@ -315,7 +319,10 @@
     }
     
     #intro img {
-        display: none;
+        background: url("./images/b&w\(2\)small.jpg");
+        width: 230px; 
+        height: 233px; 
+        margin: 63px 67px 15px 86px; 
     }
     
     #about {
