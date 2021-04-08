@@ -4,6 +4,7 @@
     text-decoration: none;
 }
 
+/*Working on the top/header - want a fox image with initials on left*/
 #header {
     display: flex; 
 }
@@ -24,6 +25,7 @@
     font-size: 40px;
 }
 
+/*Will add more menu items as I get more data*/
 #menu {
     border: 20px solid white; 
 }
@@ -54,6 +56,7 @@
     background-color: darkslategrey;
 }
 
+/*Main information*/
 #intro {
     display: flex; 
     background-color: black;
@@ -62,10 +65,10 @@
     border: 20px solid white; 
 }
 
+/*Main image*/
 #intro img {
     height: 750px; 
     width: 800px;  
-
 }
 
 #about {
@@ -87,6 +90,7 @@
     line-height: 2;
 }
 
+/*the projects and will add more as more projects get finished*/
 #projects {
     padding: 10px;
     display: flex; 
@@ -101,18 +105,16 @@
     padding-bottom: 43px;
 }
 
-
 #projects h1 {
     font-size: 40px;
     margin: 0 20% 0 7%;  
     border: 33px solid white; 
     padding: 50px; 
-
 }
 
+/*Made this one larger then the others*/
 #new-project {
     object-position: top right; 
-
 }
 
 #new-project img{
@@ -131,17 +133,16 @@
     flex: 50%; 
 }
 
+/*footer which is the contact section*/
 #footer {
     display: flex; 
     margin-bottom: 40px;
 }
 
-
 #footer div {
     font-size: 30px;
     margin:  0 auto;
     text-align: center;
-    
 }
 
 #footer .icon{
@@ -159,6 +160,8 @@
     padding: 10px;
 }
 
+
+/*Sizing down for cellphone*/
 @media only screen and (max-width: 600px) {
   
     #fox {
@@ -169,34 +172,20 @@
     #name {
         font-family: 'Lora', serif;
         font-weight: bolder;
-        font-size:35px;
+        font-size: 35px;
     }
     
     #menu {
-        border: 20px solid white; 
         margin: 0px -4px 9px 0px;
     }
     
-    #menu ul {
-        list-style-type: none;
-        background-color: black;
-        font-family: 'Lora', serif;
-        font-size: 16px;
-    }
-    
     #menu li a {
-        color: white; 
-        padding: 0px 10px; 
-        text-decoration: none;
+        padding: 0px 10px;
     }
     
     #intro {
         display: flex; 
         flex-direction: column;
-        background-color: black;
-        color: white; 
-        font-family: 'Lora', serif;
-        border: 20px solid white; 
         margin: -28px 0px 10px 0px; 
     }
     
@@ -207,40 +196,22 @@
         margin: -16px 0px 15px 86px; 
     }
     
-    #about {
-        text-align: center;
-        font-weight: lighter;
-    }
-    
     #about h2 {
         margin-bottom: 12px;
         margin-top: -273px; 
         font-size: 23px;
     }
     
-    #about p {
-        font-size: 14px;
-    }
-    
     #projects {
         display: flex; 
         flex-flow: column wrap;
         align-items: baseline;
-        background-color: black;
-        border: 20px solid white;
-        font-family: 'Lora', serif;
-        color: white; 
     }
-    
     
     #projects h1 {
         font-size: 24px;
         border: none; 
         margin: -40px 0px -20px 45px; 
-    }
-    
-    #new-project h2, h3 {
-        font-size: 16px; 
     }
     
     #new-project img{
@@ -249,12 +220,7 @@
     }
     
     .ind { 
-        color: white; 
         margin-top: -23px; 
-    }
-    
-    .ind h2, h3{
-        font-size: 16px;
     }
     
     .ind img {
@@ -262,16 +228,10 @@
         width: 350px;  
         margin: 0px 0px 0px -18px; 
     }
-    
-    #footer {
-        display: flex; 
-    }
-    
-    
+
     #footer div {
         font-size: 20px;
         text-align: center;
-        
     }
     
     #footer .icon{
@@ -281,6 +241,8 @@
     }
 }
 
+
+/*Sizing down for ipads*/
 @media only screen and (max-width: 768px) and (min-width: 600px) {
   
     #fox {
@@ -292,29 +254,14 @@
     }
     
     #menu {
-        border: 20px solid white; 
         margin: -15px 20px 8px 11px;
     }
     
-    #menu ul {
-        list-style-type: none;
-        background-color: black;
-        font-family: 'Lora', serif;
-        font-size: 16px;
-    }
-    
     #menu li a {
-        color: white; 
         padding: 0px 10px; 
-        text-decoration: none;
     }
     
     #intro {
-        display: flex; 
-        background-color: black;
-        color: white; 
-        font-family: 'Lora', serif;
-        border: 20px solid white; 
         margin: -26px 20px 10px 11px; 
     }
     
@@ -325,29 +272,16 @@
         margin: 63px 67px 15px 86px; 
     }
     
-    #about {
-        text-align: center;
-        font-weight: lighter;
-    }
-    
     #about h2 {
         margin-bottom: 12px;
         margin-top: -273px; 
         font-size: 23px;
     }
     
-    #about p {
-        font-size: 14px;
-    }
-    
     #projects {
         display: flex; 
         flex-flow: column wrap;
-        align-items: baseline;
-        background-color: black;
-        border: 20px solid white;
-        font-family: 'Lora', serif;
-        color: white; 
+        align-items: baseline; 
         margin: -26px 20px 10px 11px; 
     }
     
@@ -357,23 +291,14 @@
         border: none; 
         margin: -40px 0px -20px 45px; 
     }
-    
-    #new-project h2, h3 {
-        font-size: 16px; 
-    }
-    
+
     #new-project img{
         height: 400px;
         width: 350px;
     }
     
     .ind { 
-        color: white; 
         margin-top: -23px; 
-    }
-    
-    .ind h2, h3{
-        font-size: 16px;
     }
     
     .ind img {
@@ -381,16 +306,10 @@
         width: 350px;  
         margin: 0px 0px 0px -18px; 
     }
-    
-    #footer {
-        display: flex; 
-    }
-    
-    
+
     #footer div {
         font-size: 20px;
         text-align: center;
-        
     }
     
     #footer .icon{
