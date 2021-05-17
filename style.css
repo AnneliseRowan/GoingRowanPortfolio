@@ -107,7 +107,7 @@
 
 #projects h1 {
     font-size: 40px;
-    margin: 0 20% 0 7%;  
+    margin: 0 19% 0 7%;  
     border: 33px solid white; 
     padding: 50px; 
 }
@@ -115,11 +115,12 @@
 /*Made this one larger then the others*/
 #new-project {
     object-position: top right; 
+    margin: 22px -10px 15px 14px;
 }
 
 #new-project img{
-    height: 800px;
-    width: 600px;
+    height: 662px;
+    width: 641px;
 }
 
 .ind { 
@@ -128,7 +129,7 @@
 }
 
 .ind img {
-    height: 300px;
+    height: 437px;
     width: 800px;  
     flex: 50%; 
 }
